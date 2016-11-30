@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First HTML</title>
+  <meta charset="UTF-8">
+<style>
+	* {  
+		margin: 0;  
+		padding: 0;  
+		-moz-box-sizing: border-box;  
+		-webkit-box-sizing: border-box;  
+		box-sizing: border-box;  
+	}
+	#p01 {
+		position: absolute;/**/
+		color:white;
+		font-family:Arial Black;
+		font-size:200px;
+		right:0;
+	}
+	#p02 {
+		color:black;
+		font-family:Arial Black;
+		font-size:200px;
+	}
+</style>
+</head>
+
+<body>
+	<div id="l1" style="position:absolute;left:0; width:50%; height:100%; background-color:black;">
+		<p id="p01">ze</p>
+	</div>
+	<div id="r1" style="position:absolute;right:0; width:50%; height:100%; background-color:white;">
+		<p id="p02">ro</p>
+	</div>
+
+	<script>
+	function warning(){
+	setTimeout(function(){
+	alert("click the black part the web will transfer you to the place where all my code will be post. click the white part, the web will transfer you to the place  will my resume is posted");
+	},1000);
+	}
+
+	function openCode(trigger) {
+ 		if(trigger==1){
+ 		window.open("code%20area.html","_self");
+  		}
+		
+		else if(trigger==2){
+		window.open("file:///C:/Users/john/Desktop/resume.html","_self");
+		}
+	}
+	//warning();
+	document.getElementById("l1").addEventListener('click',function(){openCode(1)},true);	
+	document.getElementById("r1").addEventListener('click',function(){openCode(2)},true);
+	</script>
+	
+	
+
+       
+
+</body>
+
+</html>
